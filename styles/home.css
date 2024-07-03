@@ -1,0 +1,87 @@
+main {
+    height: 100%;
+    width: 100%;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    width: 100%;
+    height: 80%;
+}
+
+#banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+#info-title {
+    margin-bottom: 1rem;
+}
+
+#info-title h1 {
+    font-size: 3.6rem;
+}
+
+#info-paragraph {
+    margin-bottom: 3rem;
+}
+
+#info-paragraph p {
+    font-size: 1.5rem;
+}
+
+#banner-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 35%;
+    height: 100%;
+}
+
+#banner-image img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+#banner-buttons {
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+#banner-buttons button {
+    width: 200px;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2C3036;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+#banner-buttons button:hover {
+    filter: brightness(0.5);
+}
+
+#banner-buttons button:nth-child(1) {
+    background: #fff;
+}
+
+#banner-buttons button:nth-child(2) {
+    background: #9BEA19;
+    margin-left: 2rem;
+}
