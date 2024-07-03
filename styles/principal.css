@@ -23,6 +23,7 @@ main {
 
 #info-title {
     margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-out forwards, slideIn 0.5s ease-out forwards;
 }
 
 #info-title h1 {
@@ -35,6 +36,7 @@ main {
 
 #info-paragraph p {
     font-size: 1.5rem;
+    animation: fadeIn 3s ease-out forwards, slideIn 1s ease-out forwards;
 }
 
 #banner-image {
@@ -45,6 +47,7 @@ main {
     margin-top: 2rem;
     width: 35%;
     height: 100%;
+    animation: fadeIn 2s ease-out forwards, slideIn 1.5s ease-out forwards;
 }
 
 #banner-image img {
@@ -59,6 +62,7 @@ main {
     display: flex;
     align-items: start;
     width: 100%;
+    animation: fadeIn 2s ease-out forwards, slideIn 2s ease-out forwards;
 }
 
 #banner-buttons button {

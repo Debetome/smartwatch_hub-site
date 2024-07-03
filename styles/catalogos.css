@@ -15,6 +15,7 @@ main {
     border-radius: 2rem;
     border: 2.5px #fff solid; 
     padding: 2rem;
+    animation: fadeIn 2s ease-out forwards, slideIn 1s ease-out forwards;
 }
 
 #catalogos {
@@ -39,6 +40,7 @@ main {
     flex-direction: row;
     height: 2.3rem;
     margin-bottom: 1.5rem;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .section-title span {
@@ -56,6 +58,8 @@ main {
     flex-direction: row;
     width: 100%;
     overflow-x: auto;
+    padding-bottom: 1rem;
+    animation: fadeIn 2s ease-out forwards, slideIn 0.5s ease-out forwards;
 }
 
 #deseados-lista li {
@@ -65,6 +69,7 @@ main {
 
 #catalogos-lista {
     margin-top: 2rem;
+    animation: fadeIn 2s ease-out forwards, slideIn 1.5s ease-out forwards;
 }
 
 #catalogos-ul-lista {
@@ -82,7 +87,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 300px;
+    height: 350px;
     border: 2.5px #fff solid;
     border-radius: 2rem;
 }
@@ -92,7 +97,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 40%;
+    height: 35%;
     margin-top: 1rem;
 
 }
@@ -112,4 +117,44 @@ main {
     width: 100%;
     margin-left: 1rem;
     margin-top: 1rem;
+}
+
+.catalogo-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0.3rem auto;
+}
+
+.catalogo-price h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.catalogo-price span {
+    display: flex;
+    color: #EA3232;
+    font-size: 12px;
+    transform: translateY(-5px);
+}
+
+.catalogo-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+}
+
+.catalogo-buttons button {
+    width: 85%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+}
+
+.catalogo-buttons button:nth-child(1) {
+    margin-bottom: 0.5rem;
 }
