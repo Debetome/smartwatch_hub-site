@@ -33,6 +33,55 @@
     <main>
         <section id="filtros-container">
             <h1>Filtros</h1>
+            <form id="filter-form">
+                <section class="filter-group">
+                    <label for="priceRange">Rango de precio:</label><br>
+                    <section id="price-slide">
+                        <input type="range" id="priceRange" name="priceRange" min="0" max="1000" value="500">
+                        <span id="priceValue">S/. 500</span>
+                    </section>
+                </section>
+                <section class="filter-group">
+                    <label for="brand">Marca:</label><br>
+                    <select id="brand" name="brand">
+                        <option value="">All Brands</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Fitbit">Fitbit</option>                        
+                    </select>
+                </section>
+                <section class="filter-group">
+                    <label for="rating">Rating:</label><br>
+                    <select id="rating" name="rating">
+                        <option value="">Cualquiera</option>
+                        <option value="4">4 stars</option>
+                        <option value="4.5">4.5 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </section>
+                <section class="filter-group">
+                    <label for="rating">OS:</label><br>
+                    <select id="rating" name="rating">
+                        <option value="">Cualquiera</option>
+                        <option value="watchOS">WatchOS</option>
+                        <option value="wearOS">Wear OS</option>
+                        <option value="tizen">Tizen</option>
+                        <option value="harmonyOS">HarmonyOS</option>
+                        <option value="fibitOS">Fibit OS</option>
+                        <option value="liteOS">LiteOS</option>                        
+                    </select>
+                </section>
+                <section class="filter-group">
+                    <label for="rating">Color:</label><br>
+                    <select id="rating" name="rating">
+                        <option value="">Cualquiera</option>
+                        <option value="Blanco">WatchOS</option>
+                        <option value="Negro">Wear OS</option>
+                        <option value="Gris">Tizen</option>                                               
+                    </select>
+                </section>
+                <button type="submit">Apply Filters</button>
+            </form>
         </section>
         <section id="catalogos">
             <section id="deseados">

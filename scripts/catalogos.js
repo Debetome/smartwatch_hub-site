@@ -1,4 +1,4 @@
-import { favoriteItems, catalogosItems } from "./dummy_data.js";
+import { favoriteItems, catalogosItems } from "./data/items.js";
 import AppState from "./state.js";
 
 const $favoriteList = $('#deseados-lista');
@@ -40,8 +40,9 @@ function displayCatalogos() {
 }
 
 function setGridColumns() {
+    const $catalogosList = $('#catalogos-ul-lista');
     const listWidth = $($catalogosList).width();
-    const gridColumns = Math.floor(listWidth / 80);
+    const gridColumns = Math.floor(listWidth / 100);
     $catalogosList.css('grid-template-columns', `repeat(${gridColumns}, minmax(250px, 1fr))`);
 }
 

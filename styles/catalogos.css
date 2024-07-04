@@ -46,7 +46,7 @@ main {
 .section-title span {
     background: #fff;
     height: 100%;
-    min-width: 0.6rem;
+    min-width: 0.5rem;
 }
 
 .section-title h2 {
@@ -86,8 +86,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    height: 350px;
+    width: 210px;
+    height: 380px;
     border: 2.5px #fff solid;
     border-radius: 2rem;
 }
@@ -98,7 +98,7 @@ main {
     justify-content: center;
     width: 50%;
     height: 35%;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
 
 }
 
@@ -150,11 +150,158 @@ main {
 
 .catalogo-buttons button {
     width: 85%;
-    height: 3rem;
+    min-height: 2rem;
     border-radius: 1rem;
     border: 1px solid #ccc;
+    color: #2C3036;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .catalogo-buttons button:nth-child(1) {
-    margin-bottom: 0.5rem;
+    background: #9BEA19;
+    margin: 0.5rem auto;
+}
+
+.catalogo-buttons button:hover {
+    filter: brightness(0.7);
+}
+
+#filter-form {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.filter-group:not(:first-of-type) label {
+    margin-right: 1rem;
+    width: 40%;
+}
+
+.filter-group select {
+    background: none;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.filter-group:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.filter-group:nth-child(1) #price-slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#filter-form button {
+    background: #9BEA19;
+    color: #2C3036;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+#filter-form button:hover {
+    filter: brightness(0.7);
+}
+
+/* Custom input range */
+
+.filter-group:nth-child(1) #price-slide input {
+    width: 100%;
+    margin: 0.5rem auto;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: transparent; /* Hide the default background */
+}
+
+/* Webkit browsers */
+.filter-group:nth-child(1) #price-slide input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #ddd; /* Default color of the track */
+    border-radius: 5px;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #9BEA19; /* Border color of the thumb */
+    cursor: pointer;
+    margin-top: -5px; /* Centers the thumb on the track */
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #ddd; /* Default color of the track */
+    border-radius: 5px;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-moz-range-progress {
+    background: #9BEA19;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #9BEA19; /* Border color of the thumb */
+    cursor: pointer;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-ms-fill-lower {
+    background: #9BEA19;
+    border-radius: 5px;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.filter-group:nth-child(1) #price-slide input[type="range"]::-ms-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #9BEA19; /* Border color of the thumb */
+    cursor: pointer;
+    margin-top: 0; /* Centers the thumb on the track */
 }
