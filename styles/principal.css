@@ -23,7 +23,7 @@ main {
 
 #info-title {
     margin-bottom: 1rem;
-    animation: fadeIn 1.5s ease-out forwards, slideIn 0.5s ease-out forwards;
+    animation: fadeIn 1.5s ease-out forwards, slideIn 0.7s ease-out forwards;
 }
 
 #info-title h1 {
