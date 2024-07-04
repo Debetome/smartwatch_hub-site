@@ -25,6 +25,15 @@ function createItem({ name, price, discount, rating, image }) {
     `;
 }
 
+function addClickEvents() {
+    const detailBtns = $(".catalogo .catalogo-buttons button:nth-child(2)");
+    [...detailBtns].forEach(btn => {
+        btn.addEventListener("click", () => {
+            window.location.href = "../pages/detalle.html";
+        })
+    })
+}
+
 function displayFavorites() {
     favoriteItems.forEach(data => {
         const item = createItem(data);
@@ -48,6 +57,7 @@ function setGridColumns() {
 
 displayFavorites();
 displayCatalogos();
+addClickEvents();
 setGridColumns();
 
 $(window).resize(function() {
